@@ -13,7 +13,7 @@
     <ul>
       <li v-for="product in products" :key="product.id">
         {{ product.name }} - ${{ product.price | currency }}
-        <button @click="removeProduct(product.id)">Remove</button>
+        <button class="btn2" @click="removeProduct(product.id)">Remove</button>
       </li>
     </ul>
   </div>
@@ -52,10 +52,22 @@ export default {
 background-color: green;
 }
 
+.btn{
+margin-top: 20px;
+}
+
 .product-list{
 text-align: center;
 border: 1px;
 margin: 20px;
+}
+
+.btn2{
+margin-left: 20px;
+}
+
+.btn2:hover{
+background-color: red;
 }
 
 
