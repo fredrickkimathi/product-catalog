@@ -1,6 +1,5 @@
 <template>
   <div class="product-card">
-    <img :src="product.image" alt="Product Image">
     <h3>{{ product.name }}</h3>
     <p>{{ product.price | currency }}</p>
     <button @click="$emit('add-product', product)">Add to Cart</button>

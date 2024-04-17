@@ -2,10 +2,10 @@
   <div class="product-list">
     <h2>Add Products</h2>
     <form @submit.prevent="addProduct">
-      <label for="name">Product Name:</label>
+      <label for="name" class="title">Product Name:</label>
       <input type="text" id="name" v-model="newProduct.name" required />
       <br />
-      <label for="price">Price:</label>
+      <label for="price" class="title">Price:</label>
       <input type="number" id="price" v-model.number="newProduct.price" required />
       <br />
       <button class="btn" type="submit">Add Product</button>
@@ -55,6 +55,8 @@ background-color: green;
 .product-list{
 text-align: center;
 border: 1px;
+margin: 20px;
 }
+
 
 </style>

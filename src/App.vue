@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <ProductList>
-      <template #header> <h1>Welcome to Our Product Catalog!</h1>
+      <template id="welcome"> <h1>Welcome to Our Product Catalog!</h1>
       </template>
     </ProductList>
   </div>
@@ -19,6 +19,11 @@ export default {
 
 <style>
   #app {
-    /* Styles for the application */
+    border: 1px solid gray;
+    margin: 100px;
+    background-color: cyan;
+  }
+  #welcome {
+  padding: 20px;
   }
 </style>
